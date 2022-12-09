@@ -5,7 +5,7 @@ import { UsersModule } from './users/users.module';
 import {TelegrafModule} from "nestjs-telegraf";
 import { TgbotModule } from './tgbot/tgbot.module';
 import { PostsModule } from './posts/posts.module';
-
+require('dotenv')
 
 @Module({
   imports: [ConfigModule.forRoot(), DataBaseModule, UsersModule,

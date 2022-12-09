@@ -14,8 +14,8 @@ import {UsersMiddleware} from "./users.middleware";
 export class UsersModule implements NestModule{
   configure(consumer: MiddlewareConsumer): any {
     consumer.apply(UsersMiddleware).forRoutes({
-      path: 'users/admins',
-      method: RequestMethod.GET
+      path: 'users',
+      method: RequestMethod.ALL,
     })
   }
 }

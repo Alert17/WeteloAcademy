@@ -23,7 +23,7 @@ export class PostsService {
         post.id = data.id
         post.title = data.title
         post.description = data.description
-        post.authorId = data.authorId
+        post.author = data.author
 
         return await this.postRepository.save(post)
     }
@@ -45,7 +45,7 @@ export class PostsService {
                 id: data.id,
                 title: data.name,
                 description: data.email,
-                authorId: data.authorId
+                author: data.author
             })
             .where("id = :id", { id: id })
             .execute()
