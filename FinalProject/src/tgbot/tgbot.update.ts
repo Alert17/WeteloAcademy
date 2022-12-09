@@ -11,7 +11,7 @@ export class TgbotUpdate {
 
     @Start()
     async startCommand(ctx: Context) {
-        await ctx.reply('Люблю Ренатy')
+        await ctx.reply('Hi')
     }
 
     @Hears('/users')
